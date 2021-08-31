@@ -1,0 +1,136 @@
+.button {
+  border-radius: 10px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  font-size: 34px;
+  height: 60px;
+  padding-top: 10px;
+}
+
+@media screen and (min-width: 375px) and (max-width: 540px) {
+  .button {
+    font-size: 25px;
+    border-radius: 5px;
+  }
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button.Blue {
+  background-color: hsl(30, 25%, 89%);
+  border-bottom: 5px solid hsl(28, 16%, 65%);
+  color: hsl(221, 14%, 31%);
+}
+
+.button.Blue:active {
+  background-color: hsl(221, 14%, 31%);
+  color: hsl(30, 25%, 89%);
+}
+
+.button.Blue.equal:active {
+  background-color: hsl(30, 25%, 89%);
+  color: hsl(6, 63%, 50%);
+}
+
+.button.Blue.delete:active,
+.button.Blue.reset:active {
+  background-color: hsl(30, 25%, 89%);
+  color: hsl(224, 21%, 50%);
+}
+
+.button.White {
+  background-color: hsl(45, 7%, 89%);
+  border-bottom: 5px solid hsl(35, 11%, 61%);
+  color: hsl(60, 10%, 19%);
+}
+
+.button.White:active {
+  background-color: hsl(60, 10%, 19%);
+  color: hsl(45deg 7% 89%);
+}
+
+.button.White.equal:active {
+  background-color: hsl(30, 25%, 89%);
+  color: hsl(25, 98%, 40%);
+}
+
+.button.White.delete:active,
+.button.White.reset:active {
+  background-color: hsl(30, 25%, 89%);
+  color: hsl(185, 42%, 37%);
+}
+
+.button.Purple {
+  background-color: hsl(268, 47%, 21%);
+  border-bottom: 5px solid hsl(290, 70%, 36%);
+  color: hsl(52, 100%, 62%);
+}
+
+.button.Purple:active {
+  background-color: #ffe53d;
+  color: #341c4f;
+}
+
+.button.Purple.equal:active {
+  background-color: hsl(198, 20%, 13%);
+  color: hsl(176, 100%, 44%);
+}
+
+.button.Purple.delete:active,
+.button.Purple.reset:active {
+  background-color: hsl(30, 25%, 89%);
+  color: hsl(285, 91%, 52%);
+}
+
+.button.delete,
+.button.reset,
+.button.equal {
+  font-size: 20px;
+}
+
+.button.reset,
+.button.equal {
+  grid-column: span 2;
+}
+
+.button.Blue.delete,
+.button.Blue.reset {
+  background-color: hsl(224, 21%, 50%);
+  color: hsl(30, 25%, 89%);
+  border-bottom: 4px solid hsl(224, 28%, 35%);
+}
+
+.button.Blue.equal {
+  background-color: hsl(6, 63%, 50%);
+  border-bottom: 4px solid hsl(6, 70%, 34%);
+  color: hsl(30, 25%, 89%);
+}
+
+.button.White.delete,
+.button.White.reset {
+  background-color: hsl(185, 42%, 37%);
+  color: hsl(30, 25%, 89%);
+  border-bottom: 4px solid hsl(185, 58%, 25%);
+}
+
+.button.White.equal {
+  background-color: hsl(25, 98%, 40%);
+  border-bottom: 4px solid hsl(25, 99%, 27%);
+  color: hsl(0, 0%, 100%);
+}
+
+.button.Purple.delete,
+.button.Purple.reset {
+  background-color: hsl(281, 89%, 26%);
+  color: hsl(30, 25%, 89%);
+  border-bottom: 4px solid hsl(285, 91%, 52%);
+}
+
+.button.Purple.equal {
+  background-color: hsl(176, 100%, 44%);
+  border-bottom: 4px solid hsl(177, 92%, 70%);
+  color: hsl(198, 20%, 13%);
+}

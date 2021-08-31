@@ -1,0 +1,26 @@
+.container-keys {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-gap: 20px;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 375px) and (max-width: 540px) {
+  .container-keys {
+    grid-template-columns: repeat(4, 60px);
+    grid-gap: 12px;
+  }
+}
+
+.container-keys.Blue {
+  background-color: hsl(223, 31%, 20%);
+}
+
+.container-keys.White {
+  background-color: hsl(0, 5%, 81%);
+}
+
+.container-keys.Purple {
+  background-color: hsl(268, 71%, 12%);
+}
